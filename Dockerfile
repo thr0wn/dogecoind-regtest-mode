@@ -33,8 +33,8 @@ RUN curl -LO https://github.com/dogecoin/dogecoin/releases/download/v${DOGECOIN_
   && tar --strip=2 -xzf *.tar.gz -C /usr/local/bin \
   && rm *.tar.gz
 
-COPY node1.conf ~/.dogecoin/dogecoin.conf
-COPY node2.conf ~/.dogecoin-2/dogecoin.conf
+COPY node1.conf .dogecoin/dogecoin.conf
+COPY node2.conf .dogecoin-2/dogecoin.conf
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod 777 /entrypoint.sh
 
