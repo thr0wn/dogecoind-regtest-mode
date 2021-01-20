@@ -38,7 +38,4 @@ COPY node2.conf ~/.dogecoin-2/dogecoin.conf
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod 777 /entrypoint.sh
 
-EXPOSE 28336
-EXPOSE 28334
-
 CMD ["./entrypoint.sh"]

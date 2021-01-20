@@ -9,12 +9,12 @@ docker build -t dogecoind-regtest-mode .
 
 ## 🚀 Run
 ```bash
-docker run -d --name dogecoind-regtest-mode -p 3334:3334 dogecoind-regtest-mode
+docker run -d --name dogecoind-regtest-mode -p 1111:1111 -p 1112:1112 dogecoind-regtest-mode
 ```
 
 <hr>
 
 ## ☢ Test
 ```bash
-curl --data '{"jsonrpc": "1.0", "id":"1", "method": "getnetworkinfo", "params": []}' http://root:root@localhost:3334
+curl --data '{"jsonrpc": "1.0", "id":"1", "method": "getnetworkinfo", "params": []}' http://root:root@localhost:1112
 ```
